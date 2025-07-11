@@ -65,8 +65,10 @@
   
         .nav-links.show {
           display: flex;
+          flex-direction: column;
+          align-items: flex-start;
         }
-  
+
         .hamburger {
           display: block;
         }
@@ -100,6 +102,39 @@
   text-align: center;
   }
 
+  .skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-list li {
+  margin-bottom: 15px;
+}
+
+.skills-list span {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.skill-bar {
+  background: #e0e0e0; 
+  border-radius: 8px;
+  overflow: hidden;
+  height: 10px;
+  width: 50%;
+}
+
+.skill-level {
+  height: 100%;
+  background: linear-gradient(90deg, #c5a891, #a67c52); 
+  width: 0;
+  transition: width 1s ease;
+  border-radius: 8px;
+}
+
+
       </style>
 </head>
 <body>
@@ -131,11 +166,38 @@
 
   <div class="time">
     <h2>Technical Skills</h2>
-    <ul>
-      <li>Python, C, Java</li>
-     <li>HTML, CSS , JavaScript</li>
-     <li>SQL</li>
-    </ul> 
+    <ul class="skills-list">
+  <li>
+    <span>Python</span>
+    <div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div>
+  </li>
+  <li>
+    <span>C</span>
+    <div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div>
+  </li>
+  <li>
+    <span>Java</span>
+    <div class="skill-bar"><div class="skill-level" style="width: 70%;"></div></div>
+  </li>
+  <li>
+    <span>HTML</span>
+    <div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div>
+  </li>
+  <li>
+    <span>CSS</span>
+    <div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div>
+  </li>
+  <li>
+    <span>JavaScript</span>
+    <div class="skill-bar"><div class="skill-level" style="width: 70%;"></div></div>
+  </li>
+  <li>
+    <span>SQL</span>
+    <div class="skill-bar"><div class="skill-level" style="width: 70%;"></div></div>
+  </li>
+</ul>
+
+ 
     <br>
     </div>
   <div class="time">
