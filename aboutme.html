@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+      margin: 0;
+      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: #fdf6f0 ;
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+          .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px 30px;
+    color: rgb(0, 0, 0);
+  }
+  
+  .nav-links a {
+    margin-left: 20px;
+   
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+  }
+  .home a {
+  margin-left: 20px;
+  flex-wrap: wrap;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: 5500;
+}
+  .hamburger {
+        display: none;
+        font-size: 24px;
+        cursor: pointer;
+        background: none;
+        border: none;
+        color: rgb(0, 0, 0);
+      }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  .time:hover {
+  background-color: #fff8f2;
+  border-left-color: #c5a891;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: scale(1.02);
+}
+  @media (max-width: 600px) {
+        .nav-links {
+          display: none;
+          flex-direction: column;
+          width: 100%;
+          
+          margin-top: 10px;
+        }
+  
+        .nav-links.show {
+          display: flex;
+        }
+  
+        .hamburger {
+          display: block;
+        }
+  
+        .nav-bar {
+          flex-direction: row;
+          align-items: flex-start;
+        }
+      }
+      .timeline {
+        background-color: #fff;
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+       
+    }
+    .time {
+  margin: 30px auto 0;
+  border-left: 4px solid #030303;
+  padding-left: 16px;
+  transition: all 0.3s ease;
+}
+ blockquote {
+    margin: 30px auto 0; /* top auto bottom margin */
+  font-style: italic;
+  color: #555;
+  border-left: 4px solid #030303;
+  padding-left: 16px;
+  max-width: 600px;
+  text-align: center;
+  }
+
+      </style>
+</head>
+<body>
+    <div class="nav-bar"> 
+      <div class="home">
+         <h2><b><a href="homepage.html" >Aadhithya Bharathi</a> </b> </h2></div>
+         <button class="hamburger" onclick="toggleMenu()">☰</button>
+            <div class="nav-links" id="navlinks"> 
+                <a href="aboutme.html"> About Me</a>
+                <a href="internships.html">Internships</a>
+                <a href="resume.html">Resume</a>
+                <a href="contact.html">Contact Me</a>
+        
+     </div>
+    </div>
+<div class="timeline">
+ <h2>About Me</h2> 
+ <div class="time" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
+  <div>
+    <h2>Personal Details</h2>
+    <ul style="list-style: none; padding: 0; margin: 0;">
+      <li><b>Name:</b> Aadhithya Bharathi</li>
+      <li><b>Education:</b> Undergraduate student in Computer Science</li>
+      <li><b>Interests:</b> Blending tech & creativity; building user-friendly digital experiences</li>
+    </ul>
+  </div>
+  <img src="standing.jpg" alt="Aadhithya holding a camera" style="width:300px; height:auto; border-radius:12px;  margin-left: 80px; margin-top: 10px;">
+</div>
+
+  <div class="time">
+    <h2>Technical Skills</h2>
+    <ul>
+      <li>Python, C, Java</li>
+     <li>HTML, CSS , JavaScript</li>
+     <li>SQL</li>
+    </ul> 
+    <br>
+    </div>
+  <div class="time">
+    <h2>General Skills</h2>
+    <ul>
+      <li>Problem solving & critical thinking</li>
+     <li>Fast learner & adaptable to new technologies</li>
+     <li>Effective communication & collaboration</li>
+    </ul>   
+    <br>
+  </div>
+   <div class="time">
+    <h2>Competitions participated</h2>
+    <ul>
+      <li>Participated in the Smart India Hackathon (SIH), contributing innovative solutions as part of a team.</li>
+      <li>Advanced to the final round of the Amrita Value-Based Health Hackathon, working on impactful healthcare solutions.</li>
+    </ul>
+    <br>
+    
+  </div>
+   <blockquote>"Creativity is intelligence having fun." - Albert Einstein</blockquote>
+  
+</div>
+    
+    
+</body>
+<script>
+    function toggleMenu() {
+      const nav = document.getElementById("navlinks");
+      nav.classList.toggle("show");
+    }
+  </script>
+</html>

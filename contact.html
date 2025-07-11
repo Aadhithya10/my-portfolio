@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        body {
+      margin: 0;
+      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: #fdf6f0 ;
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+          .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px 30px;
+    color: rgb(0, 0, 0);
+  }
+  
+  .nav-links a {
+    margin-left: 20px;
+   
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+  }
+  .home a {
+  margin-left: 20px;
+  flex-wrap: wrap;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: 5500;
+}
+  .hamburger {
+        display: none;
+        font-size: 24px;
+        cursor: pointer;
+        background: none;
+        border: none;
+        color: rgb(0, 0, 0);
+      }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  @media (max-width: 600px) {
+        .nav-links {
+          display: none;
+          flex-direction: column;
+          width: 100%;
+          
+          margin-top: 10px;
+        }
+  
+        .nav-links.show {
+          display: flex;
+        }
+  
+        .hamburger {
+          display: block;
+        }
+  
+        .nav-bar {
+          flex-direction: row;
+          align-items: flex-start;
+        }
+      }
+      .timeline {
+        background-color: #fff;
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+       
+    }
+    .time {
+  margin: 30px auto 0;
+  border-left: 4px solid #030303;
+  padding-left: 16px;
+  transition: all 0.3s ease;
+}
+ blockquote {
+    margin: 30px auto 0; /* top auto bottom margin */
+  font-style: italic;
+  color: #555;
+  border-left: 4px solid #030303;
+  padding-left: 16px;
+  max-width: 600px;
+  text-align: center;
+  }
+
+      </style>
+</head>
+<body>
+    <div class="nav-bar"> 
+      <div class="home">
+         <h2><b><a href="homepage.html" >Aadhithya Bharathi</a> </b> </h2></div>
+         <button class="hamburger" onclick="toggleMenu()">☰</button>
+            <div class="nav-links" id="navlinks"> 
+                <a href="aboutme.html"> About Me</a>
+                <a href="internships.html">Internships</a>
+                <a href="resume.html">Resume</a>
+                <a href="contact.html">Contact Me</a>
+        
+     </div>
+    </div>
+   <div class="timeline" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
+  <div style="flex: 1; min-width: 250px;">
+    <h2>Contact Me</h2>
+    <p>If you have any questions or would like to get in touch, feel free to reach out to me via email or connect with me on LinkedIn.</p>
+    <div class="time">
+      <p>📧 Email: <a href="mailto:aadhithyabharathi10@gmail.com">aadhithyabharathi10@gmail.com</a></p>
+    </div>
+    <div class="time">
+      <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/aadhithya-bharathi-86a9aa290/" target="_blank" rel="noopener noreferrer">View My Profile</a></p>
+    </div>
+    <blockquote>"The only way to do great work is to love what you do." - Steve Jobs</blockquote>
+  </div>
+  <img src="photo1.jpg" alt="Aadhithya holding a camera" 
+       style="width:200px; height:auto; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.1); margin-left: 20px; margin-top: 10px;">
+</div>
+
+</body>
+</html>

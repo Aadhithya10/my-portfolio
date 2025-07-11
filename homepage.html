@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+      body {
+    margin: 0;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #fdf6f0 ;
+    color: #1a1a1a;
+    line-height: 1.6;
+  }
+  /* Default (light mode) */
+body {
+  background-color: #fdf6f0;
+  color: #1a1a1a;
+}
+
+/* Dark mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+.nav-bar.dark-mode {
+  color: #f1f1f1;
+}
+
+.nav-links a.dark-mode {
+  color: #f1f1f1;
+}
+
+        .nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 15px 30px;
+  color: rgb(0, 0, 0);
+}
+
+.nav-links a {
+  margin-left: 20px;
+ 
+  flex-wrap: wrap;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+.home a {
+  margin-left: 20px;
+  flex-wrap: wrap;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: 5500;
+}
+.hamburger {
+      display: none;
+      font-size: 24px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      color: rgb(0, 0, 0);
+    }
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 600px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        
+        margin-top: 10px;
+      }
+
+      .nav-links.show {
+        display: flex;
+      }
+
+      .hamburger {
+        display: block;
+      }
+
+      .nav-bar {
+        flex-direction: row;
+        align-items: flex-start;
+      }
+    }
+    
+
+  .intro img {
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .intro p {
+    margin-top: 20px;
+    font-size: 17px;
+    color: #444;
+  }
+
+  .intro blockquote {
+    margin: 30px auto 0; /* top auto bottom margin */
+  font-style: italic;
+  color: #555;
+  border-left: 4px solid #030303;
+  padding-left: 16px;
+  max-width: 600px;
+  text-align: center;
+  
+  }
+  .intro{
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+    h2 {
+      margin: 0;
+      font-size: 24px;
+      color: rgb(0, 0, 0);
+    }
+    
+    b {
+      color: rgb(0, 0, 0);
+  }
+
+  .intro-con {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.intro-con img {
+  flex-shrink: 0;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.intro-text {
+  flex: 1;
+  min-width: 250px;
+  color: #444;
+}
+
+@media (max-width: 600px) {
+  .intro-con {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro-text {
+    text-align: center;
+  }
+}
+.intro-con img {
+    margin-bottom: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="nav-bar"> 
+      <div class="home">
+         <h2><b><a href="homepage.html" >Aadhithya Bharathi</a> </b> </h2></div>
+         <button class="hamburger" onclick="toggleMenu()">☰</button>
+            <div class="nav-links" id="navlinks"> 
+                <a href="aboutme.html"> About Me</a>
+                <a href="internships.html">Internships</a>
+                <a href="resume.html">Resume</a>
+                <a href="contact.html">Contact Me</a>
+               
+
+        
+     </div>
+    </div>
+        
+    <div class="intro">
+      <h2><b> Introduction:</b></h2>
+        
+        <br>
+        <div class="intro-con">
+          <img src="sitting.jpg" alt="Aadhithya Bharathi" style="width: 250px; height: 340px; ">
+          <div class="intro-text">
+        <p><b>Hello, I’m Aadhithya Bharathi — a Computer Science undergraduate with a passion for building web experiences and telling stories through code and creativity.</b>  </p>
+        <p>I specialize in full-stack web development, with a strong interest in designing intuitive, scalable, and responsive web applications. I enjoy working across both frontend and backend stacks — turning ideas into interactive digital products that serve real-world users.
+           <br> <br>Beyond programming, I’m also a visual storyteller. My interest in photography has led me to publish work in Ananda Vikatan, where I’ve captured moments that blend culture, emotion, and narrative. This creative background complements my approach to development — where user experience, design, and functionality go hand in hand.
+            I believe in continuous learning, collaborative growth, and using technology as a tool for positive impact. This portfolio showcases a mix of my technical projects, creative work, and personal explorations.
+            Thank you for visiting — feel free to explore and reach out if you'd like to connect or collaborate.</p>
+        </div>
+        
+    </div>
+    <blockquote>“The best way to predict the future is to invent it.” — Alan Kay</blockquote>
+   
+</body>
+<script>
+    function toggleMenu() {
+      const nav = document.getElementById("navlinks");
+      nav.classList.toggle("show");
+    }
+  </script>
+</html>

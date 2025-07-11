@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        body {
+      margin: 0;
+      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: #fdf6f0 ;
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+          .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px 30px;
+    color: rgb(0, 0, 0);
+  }
+  
+  .nav-links a {
+    margin-left: 20px;
+   
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+  }
+  .home a {
+  margin-left: 20px;
+  flex-wrap: wrap;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: 5500;
+}
+  .hamburger {
+        display: none;
+        font-size: 24px;
+        cursor: pointer;
+        background: none;
+        border: none;
+        color: rgb(0, 0, 0);
+      }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  @media (max-width: 600px) {
+        .nav-links {
+          display: none;
+          flex-direction: column;
+          width: 100%;
+          
+          margin-top: 10px;
+        }
+  
+        .nav-links.show {
+          display: flex;
+        }
+  
+        .hamburger {
+          display: block;
+        }
+  
+        .nav-bar {
+          flex-direction: row;
+          align-items: flex-start;
+        }
+      }
+      .timeline {
+        background-color: #fff;
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+       
+    }
+    .time {
+  margin: 30px auto 0;
+  border-left: 4px solid #030303;
+  padding-left: 16px;
+  transition: all 0.3s ease;
+}
+.button {
+ display: inline-block;
+    padding: 15px 15px;
+    background-color: #c5a891;
+    color: white;
+    border: none;
+    border-radius: 45px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    align-items: center;
+}
+ blockquote {
+    margin: 30px auto 0; /* top auto bottom margin */
+  font-style: italic;
+  color: #555;
+  border-left: 4px solid #030303;
+  padding-left: 16px;
+  max-width: 600px;
+  text-align: center;
+  }
+  .time:hover {
+  background-color: #fff8f2;
+  border-left-color: #c5a891;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: scale(1.02);
+}
+      </style>
+</head>
+<body>
+    <div class="nav-bar"> 
+      <div class="home">
+         <h2><b><a href="homepage.html" >Aadhithya Bharathi</a> </b> </h2></div>
+         <button class="hamburger" onclick="toggleMenu()">☰</button>
+            <div class="nav-links" id="navlinks"> 
+                <a href="aboutme.html"> About Me</a>
+                <a href="internships.html">Internships</a>
+                <a href="resume.html">Resume</a>
+                <a href="contact.html">Contact Me</a>
+        
+     </div>
+    </div>
+    <div class="timeline">
+        <p><b><h1>My Resume</h1></b></p>
+        <div class="time">
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <p><b>Bachelor of Technology in Computer Science and Engineering</b></p>
+                    <p>Amrita Vishwa Vidhyapeetham, 2023 - Present</p>
+                </li>
+                <li>
+                    <p><b>Diploma in Data Science</b></p>
+                    <p>IIT Madras, 2023- Present</p>
+                </li>
+            </ul>
+             <br>
+            </div>
+            <div class="time">
+            <h2>Experience</h2>
+            <ul>
+                <li>
+                    <p><b>Full stack developer intern</b></p>
+                    <p>Trusty Bytes, May 2025-June 2025</p>
+                </li>
+                <li>
+                    <p><b>Photo Journalist</b></p>
+                    <p>Ananda Vikatan, August 2024- August 2025</p>
+                </li>
+            </ul>
+             <br>
+            </div>
+            <div class="time">
+                <h2>Extra Curriculars</h2>
+                <ul>
+                    <li>
+                        <p><b>Editor at ASCII newsletter</b></p>
+                        <p>Amrita Vishwa Vidhyapeetham</p>
+                    </li>
+                </ul>
+                 <br>
+                </div>
+                <div class="time">
+                    <h2>Courses</h2>
+                    <ul>
+                        <li>
+                            <p><b>Web Developer Boot camp 2025</b></p>
+                            <p>Udemy</p>
+                        </li>
+                        <li>
+                            <p><b>Learn Figma</b></p>
+                            <p>Udemy</p>
+                        </li>
+                    </ul> <br>
+                        
+                </div>
+            <div class="time">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Programming Languages: Python, Java, C, JavaScript</li>
+                    <li>Web Development: HTML, CSS</li>
+                    <li>Database Management: MySQL</li>
+                    <li>Soft Skills: Teamwork, Communication, Problem Solving, leadership</li>
+                </ul>
+                <br>
+                </div>
+        <br> <br>
+                <a href="Aadhithya.pdf" download class="button" target="_blank" >Download Resume</a>
+
+            <blockquote>
+              "Simplicity is the ultimate sophistication." - Leonardo da Vinci
+            </blockquote>   
+           </div>
+w
+    
+</body>
+<script>
+    function toggleMenu() {
+      const nav = document.getElementById("navlinks");
+      nav.classList.toggle("show");
+    }
+  </script>
+</html>

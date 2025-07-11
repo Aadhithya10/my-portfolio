@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography</title>
+    <style>
+        body {
+      margin: 0;
+      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: #fdf6f0 ;
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+          .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px 30px;
+    color: rgb(0, 0, 0);
+  }
+  
+  .nav-links a {
+    margin-left: 20px;
+   
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+  }
+  .home a {
+  margin-left: 20px;
+  flex-wrap: wrap;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: 5500;
+}
+  .hamburger {
+        display: none;
+        font-size: 24px;
+        cursor: pointer;
+        background: none;
+        border: none;
+        color: rgb(0, 0, 0);
+      }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  @media (max-width: 600px) {
+        .nav-links {
+          display: none;
+          flex-direction: column;
+          width: 100%;
+          
+          margin-top: 10px;
+        }
+  
+        .nav-links.show {
+          display: flex;
+        }
+  
+        .hamburger {
+          display: block;
+        }
+  
+        .nav-bar {
+          flex-direction: row;
+          align-items: flex-start;
+        }
+      }
+     .timeline {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.time-left, .time-right {
+  display: flex;
+  align-items: center;
+  margin: 30px auto 0;
+}
+
+.time-left {
+  border-left: 4px solid #030303;
+  padding-left: 16px;
+}
+
+.time-right {
+  justify-content: flex-end;
+  border-right: 4px solid #030303;
+  padding-right: 16px;
+  text-align: right;
+}
+
+.time-left img, .time-right img {
+  width: 30%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.time-left p {
+  margin-left: 10px;
+}
+
+.time-right p {
+  margin-right: 10px;
+}
+
+/* Responsive: stack vertically on small screens */
+@media (max-width: 600px) {
+  .time-left, .time-right {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-left: none;
+    border-right: none;
+    padding: 0;
+  }
+
+  .time-left p, .time-right p {
+    margin: 10px 0 0;
+  }
+
+  .time-left img, .time-right img {
+    width: 80%;
+    margin: 10px 0;
+  }
+}
+
+ blockquote {
+    margin: 30px auto 0; /* top auto bottom margin */
+  font-style: italic;
+  color: #555;
+  border-left: 4px solid #030303;
+  padding-left: 16px;
+  max-width: 600px;
+  text-align: center;
+  }
+  .time-left:hover {
+  background-color: #fff8f2;
+  border-left-color: #c5a891;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: scale(1.02);
+}
+ .time-right:hover {
+  background-color: #fff8f2;
+  border-right-color: #c5a891;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: scale(1.02);
+}
+ .time5 {
+  margin: 30px auto 0;
+  border-left: 4px solid #030303;
+  padding-left: 16px;
+  transition: all 0.3s ease;
+}
+
+.time5:hover {
+  background-color: #fff8f2;
+  border-left-color: #c5a891;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: scale(1.02);
+}
+.button{
+    display: inline-block;
+    padding: 15px 15px;
+    background-color: #c5a891;
+    color: white;
+    border: none;
+    border-radius: 45px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+      </style>
+</head>
+<body>
+    <div class="nav-bar"> 
+      <div class="home">
+         <h2><b><a href="homepage.html" >Aadhithya Bharathi</a> </b> </h2></div>
+         <button class="hamburger" onclick="toggleMenu()">☰</button>
+            <div class="nav-links" id="navlinks"> 
+                <a href="aboutme.html"> About Me</a>
+                <a href="internships.html">Internships</a>
+                <a href="resume.html">Resume</a>
+                <a href="contact.html">Contact Me</a>
+        
+     </div>
+    </div>
+    <div class="timeline">
+  <h2>Few of My Best Works</h2>
+  
+   <div class="time">
+  <div class="time-left">
+    <img src="p1.jpg" alt="Butterfly" />
+    <p>📸 Nature Close-up: Capturing the delicate beauty of a butterfly at the park</p>
+  </div>
+</div>
+<div class="time">
+  <div class="time-right">
+    <p>📸 Street Portrait: A joyful moment of a little girl</p>
+    <img src="p2.jpg" alt="Street Portrait" />
+  </div>
+</div>
+<div class="time">
+  <div class="time-left">
+    <img src="p3.jpg" alt="Cityscape" />
+    <p>📸 Photography: Vibrant city nightscape</p>
+  </div>
+</div>
+<div class="time">
+  <div class="time-right">
+    <p>📸 Street Photography: A dad and his daughter</p>
+    <img src="p4.jpg" alt="fam" />
+    
+  </div>
+</div>
+
+<div class="time5" style="text-align: center;">
+  <p style="margin-bottom: 15px;"><b>Links to see my stories published in Ananda Vikatan app</b></p>
+  <img src="photo1.jpg" alt="Aadhithya holding a camera" style="width:200px; height:auto; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.1); margin-bottom: 15px;">
+  <br>
+  <button class="button" onclick="window.open('https://www.vikatan.com/author/aadhithya-bharathi-a')">Click here</button>
+  <br><br>
+</div>
+
+</body>
+<script>
+    function toggleMenu() {
+      const nav = document.getElementById("navlinks");
+      nav.classList.toggle("show");
+    }
+  </script>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internships</title>
+    <style>
+        body {
+      margin: 0;
+      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: #fdf6f0 ;
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+          .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px 30px;
+    color: rgb(0, 0, 0);
+  }
+  
+  .nav-links a {
+    margin-left: 20px;
+   
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+  }
+  .home a {
+  margin-left: 20px;
+  flex-wrap: wrap;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: 5500;
+}
+  .hamburger {
+        display: none;
+        font-size: 24px;
+        cursor: pointer;
+        background: none;
+        border: none;
+        color: rgb(0, 0, 0);
+      }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  @media (max-width: 600px) {
+        .nav-links {
+          display: none;
+          flex-direction: column;
+          width: 100%;
+          
+          margin-top: 10px;
+        }
+  
+        .nav-links.show {
+          display: flex;
+        }
+  
+        .hamburger {
+          display: block;
+        }
+  
+        .nav-bar {
+          flex-direction: row;
+          align-items: flex-start;
+        }
+      }
+      .timeline {
+        background-color: #fff;
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+       
+    }
+    .time {
+  margin: 30px auto 0;
+  border-left: 4px solid #030303;
+  padding-left: 16px;
+  transition: all 0.3s ease;
+}
+
+.time:hover {
+  background-color: #fff8f2;
+  border-left-color: #c5a891;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: scale(1.02);
+}
+
+            
+  
+  .intern {
+   
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #fdf6f0 ;
+    color: #1a1a1a;
+    
+}
+ blockquote {
+    margin: 30px auto 0; /* top auto bottom margin */
+  font-style: italic;
+  color: #555;
+  border-left: 4px solid #030303;
+  padding-left: 16px;
+  max-width: 600px;
+  text-align: center;
+  }
+.button{
+    display: inline-block;
+    padding: 15px 15px;
+    background-color: #c5a891;
+    color: white;
+    border: none;
+    border-radius: 45px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+</style>
+</head>
+
+
+<body>
+    <div class="nav-bar"> 
+        <div class="home">
+           <h2><a href="homepage.html" >Aadhithya Bharathi</a> </b> </h2></div>
+           <button class="hamburger" onclick="toggleMenu()">☰</button>
+              <div class="nav-links" id="navlinks"> 
+                  <a href="aboutme.html"> About Me</a>
+                  <a href="internships.html">Internships</a>
+                  <a href="resume.html">Resume</a>
+                  <a href="contact.html">Contact Me</a>
+          
+       </div>
+      </div>
+
+      <div class="timeline">
+        <h2>Internships</h2>
+        <div class="time">
+           <p><b>Trusty Bytes | Full Stack Developer | May 2025- June 2025</b></p>
+            <p>
+                I interned at <b>Trusty Bytes</b>, where I developed the frontend of a demand-supply mobile 
+                application using <b>React Native</b>. During this time, I focused on creating responsive and 
+                user-friendly interfaces, ensuring seamless interaction and performance across both Android and
+                 iOS platforms. This experience strengthened my skills in mobile UI development, component-based 
+                 architecture, and cross-platform design.
+                 
+            </p>
+              
+                
+            <button class="button" onclick="window.open('certificate.pdf', '_blank')">📄 View Certificate</button>
+            <br><br>
+            
+        </div>
+        <div class="time"> 
+            <p><b>Ananda Vikatan | Photo Journalist | August 2024 - Present</b></p>
+            Alongside my tech pursuits, I’ve been working as a Student Journalist with Ananda Vikatan, one of 
+            India’s most respected Tamil magazines. As a photojournalist, I’ve published stories that blend 
+            culture, emotion, and visual storytelling. This creative journey has refined my eye for detail and 
+            deepened my ability to communicate ideas clearly — skills I now bring into my design and development work.</p>
+            <button class="button" onclick="window.open('photography.html','_blank')">Click Here</button>
+            <br><br>
+        </div>
+        
+        <blockquote>"Talk is cheap. Show me the code." - Linus Torvalds</blockquote>
+    </div>
+   </body>
+<script>
+    function toggleMenu() {
+      const nav = document.getElementById("navlinks");
+      nav.classList.toggle("show");
+    }
+  </script>
+</html>
